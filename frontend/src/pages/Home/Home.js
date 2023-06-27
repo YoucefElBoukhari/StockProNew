@@ -3,6 +3,7 @@ import{AiFillDollarCircle} from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import './home.scss';
 import heroImg from "../../assets/inv-img.png";
+import { ShowOnLogin, ShowOnLogout } from '../../components/protect/HiddenLink';
 
 const Home = () => {
   return (
@@ -12,19 +13,25 @@ const Home = () => {
                 <AiFillDollarCircle size={35} />
             </div>
             <ul className="home-links">
+                <ShowOnLogout>
                 <li>   
                     <Link to="/register">Register</Link>
                 </li>
+                </ShowOnLogout>
+                <ShowOnLogout>
                 <li>
                     <button className="--btn --btn-primary">
                     <Link to="/login">Login</Link>
                     </button>
                 </li>
+                </ShowOnLogout>
+                <ShowOnLogin>
                 <li>
                     <button className='--btn --btn-primary'>
-                    <Link to="/dashboard">Dashboard</Link>
+                    <Link to="/dashboard">Acceuil</Link>
                     </button>
                 </li>
+                </ShowOnLogin>
             </ul>
         </nav>
         {/* Hero SECTION*/}
@@ -42,7 +49,7 @@ const Home = () => {
                 votre entreprise...
                 </p>
                 <p>
-                Ce sytéme est réalisé par des étudiants ingénieurs
+                Cette application est réalisée par des étudiants ingénieurs...
                 </p>
                 
                 <button className='--btn --btn-primary'>
