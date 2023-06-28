@@ -57,15 +57,6 @@ export default function TableForm({description, setDescription, quantity,
               const vat = (vatRate / 100) * somme;
               setVatAmount(vat);
             }, [somme]);
-
-            
-
-            const [vat20, setVat20] = useState('');
-            const handleVat20Change = (event) => {
-                      setVat20(event.target.value);
-            };
-            
-        
         //Edit function
         const editRow = (id) => {
             const editingRow = list.find((row) => row.id === id)

@@ -1,28 +1,7 @@
 import React from "react"
-import { useState, useEffect } from 'react';
 
 
 export default function Table({list ,somme,vat20}) {
-
-    const [vatAmount20, setVatAmount20] = useState("");
-            useEffect(() => {
-              const vatRate = 20;
-              const vat = (vatRate / 100) * somme;
-              setVatAmount20(vat);
-            }, [somme]);
-    const [vatAmount10, setVatAmount10] = useState("");
-            useEffect(() => {
-              const vatRate = 10;
-              const vat = (vatRate / 100) * somme;
-              setVatAmount10(vat);
-            }, [somme]);
-    const [vatAmount5, setVatAmount5] = useState("");
-            useEffect(() => {
-              const vatRate = 5.5;
-              const vat = (vatRate / 100) * somme;
-              setVatAmount5(vat);
-            }, [somme]);
-    
 
     return(
         <>

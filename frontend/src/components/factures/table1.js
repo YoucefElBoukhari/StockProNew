@@ -10,18 +10,7 @@ export default function Table1({somme}) {
               const vat = (vatRate / 100) * somme;
               setVatAmount20(vat);
             }, [somme]);
-    const [vatAmount10, setVatAmount10] = useState("");
-            useEffect(() => {
-              const vatRate = 10;
-              const vat = (vatRate / 100) * somme;
-              setVatAmount10(vat);
-            }, [somme]);
-    const [vatAmount5, setVatAmount5] = useState("");
-            useEffect(() => {
-              const vatRate = 5.5;
-              const vat = (vatRate / 100) * somme;
-              setVatAmount5(vat);
-            }, [somme]);
+
 
     return(
     <>

@@ -1,7 +1,6 @@
 import { useState, useRef } from "react";
 import ClientDetails from "../../components/factures/ClientDetails";
 import Dates from "../../components/factures/Dates";
-import Footer from "../../components/factures/Footer";
 import MainDetails from "../../components/factures/MainDetails";
 import Notes from "../../components/factures/Notes";
 import Table from "../../components/factures/Table";
